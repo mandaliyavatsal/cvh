@@ -9,6 +9,8 @@ This Python-based app allows for offline AI music generation on macOS using open
 - Generate music using AI models such as OpenAI Jukebox, MuseNet, and Magenta.
 - Offline functionality for music generation.
 - Compatibility with macOS and Apple M1 hardware.
+- GUI for user interaction.
+- Option to set a directory to save downloaded models.
 
 ## Installation
 
@@ -35,7 +37,13 @@ This Python-based app allows for offline AI music generation on macOS using open
    ```bash
    python app.py
    ```
-3. The generated music will be saved as audio files in the output directory.
+3. Use the GUI to interact with the app:
+   - Enter the model name and prompt.
+   - Select the output directory to save the downloaded models and generated music.
+   - Click the "Download Model" button to download the model.
+   - Click the "Generate Music" button to generate music.
+   - Click the "Save Music" button to save the generated music.
+4. The generated music will be saved as audio files in the output directory.
 
 ## Development Environment Setup
 
@@ -49,6 +57,7 @@ This Python-based app allows for offline AI music generation on macOS using open
    soundfile
    pydub
    huggingface_hub
+   tkinter
    ```
 2. Follow the installation instructions above to set up the development environment.
 
@@ -67,4 +76,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [OpenAI Jukebox](https://github.com/openai/jukebox)
 - [MuseNet](https://openai.com/blog/musenet/)
 - [Magenta](https://magenta.tensorflow.org/)
-
